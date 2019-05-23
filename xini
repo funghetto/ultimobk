@@ -1,0 +1,39 @@
+#xhost si:localuser:ff
+
+#xterm &
+#xterm &
+
+#feh --bg-scale /home/ff/gentoo-linux-8434-1920x1200.jpg
+#start-pulseaudio-x11
+#sudo -u ff chromium &
+#nm-applet &
+#exec start-lumina-desktop
+
+#google-chrome-stable &
+
+#chromium-browser &
+#exec twm
+
+#exec dbus-launch startfluxbox
+#udiskie &
+
+#exec startxfce4
+export WINEESYNC=1
+export __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1
+export __GL_SHADER_DISK_CACHE_PATH: '/home/michele/cacheshader'
+export XDG_SESSION_TYPE=X11
+source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
+#exec mate-session
+exec startlxqt
+
+#290
+#exec startkde
+
+
+#[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+#xterm &
+#chromium-browser &
+#exec startlxde
+#startlxqt
+#exec startkde
+#exec fvwm

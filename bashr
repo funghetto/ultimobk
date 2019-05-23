@@ -1,0 +1,68 @@
+# /etc/skel/.bashrc
+#
+# This file is sourced by all *interactive* bash shells on startup,
+# including some apparently interactive shells such as scp and rcp
+# that can't tolerate any output.  So make sure this doesn't display
+# anything or bad things will happen !
+
+
+# Test for an interactive shell.  There is no need to set anything
+# past this point for scp and rcp, and it's important to refrain from
+# outputting anything in those cases.
+if [[ $- != *i* ]] ; then
+	# Shell is non-interactive.  Be done now!
+	return
+fi
+
+
+
+# Put your fun stuff here.
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib64/icedtea7/jre/lib/amd64/
+#xhost si:localuser:ff
+export PS1="\[$(tput setaf 3)\]\\$ \[$(tput sgr0)\]"
+#export QT_STYLE_OVERRIDE=Breeze
+export BROWSER=google-chrome-stable
+#alias s="STEAM_RUNTIME_PREFER_HOST_LIBRARIES=0 STEAM_RUNTIME=1 steam >/dev/null &"
+alias s="STEAM_RUNTIME_PREFER_HOST_LIBRARIES=1 STEAM_RUNTIME=0 steam >/dev/null &"
+alias ns="STEAM_RUNTIME=0 LD_LIBRARY_PATH=/usr/lib32/apulse steam"
+alias ls="ls --color"
+alias f="sudo -u ff firefox >/dev/null &"
+alias d="/home/michele/Downloads/Discord/Discord"
+alias t="/home/michele/Downloads/TeamSpeak3-Client-linux_amd64/ts3client_runscript.sh"
+alias teeeeeeee="sudo -u ff teamspeak3 >/dev/null &"
+alias ch="chromium &>/dev/null &"
+#alias ch="google-chrome-stable &>/dev/null &"
+#export WINEPREFIX=$HOME/wine322
+export WINEPREFIX=/home/michele/wine95
+export WINEARCH=win32
+alias ws="cd /home/michele/wineLeg/drive_c/Program\ Files/Steam;WINEPREFIX=/home/michele/wineLeg wine Steam.exe -no-cef-sandbox; cd"
+alias sur="sudo -u ff surf &"
+#export WINEDEBUG=-all
+export PATH=$PATH:/opt/scidvspc/
+alias rs="sudo -u ff /home/ff/runescape/runescape"
+alias td="schedtool -a 0x2 -e wine wine95/drive_c/Westwood/C\&C95/C\&C95.exe"
+alias shn="sudo shutdown -h now"
+alias ts="cd wine95/drive_c/sun/EA\ Games/Command\ \&\ Conquer\ The\ First\ Decade/Command\ \&\ Conquer\(tm\)\ Tiberian\ Sun\(tm\)/SUN; wine game.exe; cd"
+#clear
+alias wor="cd /home/michele/wine95/drive_c/GOG\ Games/Worms\ Forts\ -\ Under\ Siege/;env WINEPREFIX=$HOME/wine322 wine WF.exe; cd"
+alias upd="emerge -uDU --keep-going --with-bdeps=y @world"
+alias cr2="cd wine322/drive_c/Program\ Files/Steam/steamapps/common/Stronghold\ Crusader\ 2/bin/win32_release/; env WINEPREFIX=$HOME/wine322 wine Crusader2.exe; cd"
+alias wik="cd /home/michele/viki/drive_c/Program\ Files/Steam; WINEARCH=win32 WINEPREFIX=/home/michele/viki wine Steam.exe -no-cef-sandbox; cd"
+alias tw="cd /home/michele/rmtw/drive_c/Program\ Files/Steam; WINEARCH=win32 WINEPREFIX=/home/michele/rmtw wine Steam.exe -no-cef-sandbox; cd"
+alias popul="cd 32gb/popu/drive_c/GOG\ Games/Populous\ -\ The\ Beginning/; WINEARCH=win32 WINEPREFIX=/home/michele/32gb/popu/ wine popTB.exe; cd"
+alias populex="cd 32gb/popu/drive_c/GOG\ Games/Populous\ -\ The\ Beginning/; WINEARCH=win32 WINEPREFIX=/home/michele/32gb/popu/ wine popTBUW.exe; cd"
+alias coe="cd /home/michele/32gb/ce/drive_c/Program\ Files/Steam; WINEARCH=win32 WINEPREFIX=/home/michele/32gb/ce wine Steam.exe -no-cef-sandbox; cd"
+export PATH="$PATH:/home/michele/testch/depot_tools"
+alias stle="cd wineLeg/drive_c/Program\ Files/Steam/steamapps/common/Stronghold\ Legends; WINEARCH=win32 WINEPREFIX=/home/michele/wineLeg wine StrongholdLegends.exe; cd"
+alias witc="cd chromium2/witch/drive_c/GOG\ Games/The\ Witcher\ Enhanced\ Edition/; WINEARCH=win32 WINEPREFIX=/home/michele/chromium2/witch wine launcher.exe; cd"
+alias leag="cd /home/michele/league/drive_c/Riot\ Games/League\ of\ Legends/; WINEARCH=win32 WINEPREFIX=/home/michele/league WINEDEBUG=-all wine LeagueClient.exe; cd"
+alias leag2="cd chromium2/league2/drive_c/; WINEARCH=win32 WINEPREFIX=/home/michele/chromium2/league2 wine League\ of\ Legends\ installer\ EUW.exe; cd"
+alias kl="killall LeagueClient.exe"
+export PBA_ENABLE=1
+export WINEESYNC=1
+alias gog="cd /home/michele/second/gog/drive_c/Program\ Files/GOG\ Galaxy/; WINEARCH=win32 WINEPREFIX=/home/michele/second/gog wine GalaxyClient.exe; cd"
+alias ws2="cd /home/michele/second/steam/drive_c/Program\ Files\ \(x86\)/Steam/; WINEARCH=win64 WINEPREFIX=/home/michele/second/steam/ wine Steam.exe -no-cef-sandbox; cd"
+alias w40k="cd /home/michele/second/whdow/drive_c/Program\ Files/Steam/; WINEPREFIX=/home/michele/second/whdow WINEARCH=win32 wine Steam.exe -no-cef-sandbox; cd"
+alias neww="cd /home/michele/second/new/drive_c/Program\ Files\ \(x86\)/Steam/; WINEPREFIX=/home/michele/second/new WINEARCH=win64 wine Steam.exe -no-cef-sandbox; cd"
+alias homm="cd /home/michele/second/gog/drive_c/Program\ Files/GOG\ Galaxy/Games/HoMM\ 3\ Complete/; WINEARCH=win32 WINEPREFIX=/home/michele/second/gog wine HD_Launcher.exe; cd"
+alias beth="cd /home/michele/second/beth/drive_c/Program\ Files\ \(x86\)/Bethesda.net\ Launcher/; WINEARCH=win64 WINEPREFIX=/home/michele/second/beth/ wine BethesdaNetLauncher.exe; cd"
