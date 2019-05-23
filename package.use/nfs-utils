@@ -1,0 +1,1 @@
+net-fs/nfs-utils  ipv6 libmount nfsidmap nfsv4 tcpd uuid -caps -kerberos ldap nfsdcld nfsv41

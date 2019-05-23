@@ -1,0 +1,2 @@
+sys-boot/plymouth gtk libkms -pango split-usr
+sys-kernel/genkernel-next plymouth

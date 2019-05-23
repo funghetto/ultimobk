@@ -1,0 +1,6 @@
+kde-plasma/plasma-meta -crypt -display-manager pam -sddm
+dev-qt/qtwebkit gstreamer
+kde-plasma/plasma-desktop -semantic-desktop -touchpad
+kde-plasma/plasma-workspace handbook -semantic-desktop
+kde-frameworks/kio -kwallet
+kde-apps/dolphin -semantic-desktop

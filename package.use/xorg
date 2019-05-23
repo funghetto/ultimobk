@@ -1,0 +1,21 @@
+x11-base/xorg-server -fop
+# required by kde-plasma/plasma-workspace-5.14.3::gentoo[systemd]
+# required by kde-plasma/plasma-desktop-5.14.3::gentoo
+# required by kde-plasma/plasma-desktop (argument)
+>=sys-apps/dbus-1.12.12 user-session
+# required by kde-plasma/kwin-5.14.3-r1::gentoo
+# required by kde-plasma/plasma-workspace-5.14.3::gentoo
+# required by kde-plasma/plasma-desktop-5.14.3::gentoo
+# required by kde-plasma/plasma-desktop (argument)
+>=media-libs/mesa-18.2.6 wayland
+# required by games-util/lutris-0.4.14::gentoo[python_targets_python3_6]
+# required by lutris (argument)
+>=dev-lang/python-3.6.5 sqlite
+# required by sys-boot/plymouth-0.9.4-r1::gentoo[libkms]
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libdrm-2.4.97 libkms
+# required by x11-libs/bamf-0.5.3::sabayon
+# required by x11-misc/plank-0.11.4::sabayon
+# required by plank (argument)
+>=dev-libs/libxslt-1.1.32 python

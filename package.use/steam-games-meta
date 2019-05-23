@@ -1,0 +1,37 @@
+games-util/steam-games-meta s3tc steamgames_witcher2 steamgames_source_engine steamgames_tf2
+# required by games-util/steam-games-meta-0-r20160812::steam-overlay[s3tc]
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=media-libs/mesa-13.0.5 -bindist
+# required by www-client/firefox-52.0.2::gentoo
+# required by firefox (argument)
+>=dev-lang/python-2.7.12:2.7 sqlite
+# required by www-client/firefox-52.0.2::gentoo[pgo]
+# required by firefox (argument)
+>=x11-base/xorg-server-1.19.2 xvfb
+# required by dev-qt/qtcore-5.6.2-r1::gentoo
+# required by dev-qt/qtgui-5.6.2::gentoo
+# required by media-sound/teamspeak-client-bin-3.0.19.4::gentoo
+# required by teamspeak-client-bin (argument)
+>=dev-libs/libpcre-8.40-r1 pcre16
+# required by dev-libs/quazip-0.7.2-r1::gentoo
+# required by media-sound/teamspeak-client-bin-3.0.19.4::gentoo
+# required by teamspeak-client-bin (argument)
+>=sys-libs/zlib-1.2.11 minizip
+# required by media-sound/teamspeak-client-bin-3.0.19.4::gentoo
+# required by teamspeak-client-bin (argument)
+>=dev-libs/quazip-0.7.2-r1 -qt4
+# required by media-sound/teamspeak-client-bin-3.0.19.4::gentoo
+# required by teamspeak-client-bin (argument)
+>=dev-qt/qtgui-5.6.2 accessibility
+media-sound/teamspeak-client-bin alsa
+# required by www-client/chromium-57.0.2987.133::gentoo
+# required by chromium (argument)
+>=dev-libs/libxml2-2.9.4-r1 icu
+# required by www-client/chromium-57.0.2987.133::gentoo[system-libvpx]
+# required by chromium (argument)
+>=media-libs/libvpx-1.5.0 svc postproc
+# required by www-client/chromium-57.0.2987.133::gentoo
+# required by chromium (argument)
+>=media-libs/harfbuzz-1.4.5 icu
+media-plugins/alsa-plugins pulseaudio

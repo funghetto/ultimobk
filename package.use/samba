@@ -1,0 +1,1 @@
+net-fs/samba -acl pam -system-mitkrb5 systemd winbind

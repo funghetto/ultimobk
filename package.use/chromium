@@ -1,0 +1,11 @@
+#www-client/chromium::pg_overlay -hangouts -suid custom-cflags gtk3 L10N: ru -am -ar -bg -bn -ca -cs -da de -el en-GB es -et -fa -fi -fil -fr -gu -he -hi -hr -hu -id -it -ja -kn -ko lt -lv -ml -mr -ms -nb -nl -pl -pt-BR -pt-PT -ro -sk -sl -sr -sv -sw -ta -te -th -tr -uk -vi -zh-CN -zh-TW"
+
+www-client/chromium -swiftshader lld -system-clang system-lcms system-libdrm system-libpng system-zlib official -strip-debug-symb -pic system-ffmpeg -system-libvpx -hangouts -suid custom-cflags tcmalloc jumbo-build system-icu system-libxml L10N: ru am lv ml mr ms nb nl pl pt-BR pt-PT ro sk sl sr sv sw ta te th tr uk vi zh-CN zh-TW ar bg bn ca cs da de el en-GB es et fa fi fil fr gu he hi hr hu id it ja kn ko lt
+
+#www-client/chromium -cfi gcc strip-debug-symb system-ffmpeg system-libvpx tcmalloc jumbo-build -official -lld 
+
+#www-client/chromium -extensions -fieldtrial-testing-like-official -gtk3 -official -cfi pdf plugins -strip-debug-symb asan component-build debug debug-devtools nacl oculus -openvr profiling unsafedevfeatures vr vr-data 
+
+#www-client/chromium official tcmalloc jumbo-build -suid -system-icu custom-cflags
+
+#www-client/chromium -cfi -official debug -vaapi widevine swiftshader -system-clang custom-cflags tcmalloc jumbo-build -suid -strip-debug-symb gcc

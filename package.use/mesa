@@ -1,0 +1,1 @@
+media-libs/mesa -classic -dri3 egl -gallium gbm -llvm nptl osmesa -vdpau xvmc -bindist -d3d9 -debug gles1 gles2 -opencl -openmax -pax_kernel -pic (-selinux) -vaapi -valgrind -vulkan -wayland -xa" VIDEO_CARDS: -intel -nouveau -radeon -radeonsi (-freedreno) -i915 -i965 -imx -r100 -r200 -r300 -r600 (-vc4) (-vivante) -vmware

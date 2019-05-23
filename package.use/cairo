@@ -1,0 +1,3 @@
+x11-libs/cairo acqua X opengl
+x11-libs/libxcb xkb
+dev-cpp/cairomm X aqua

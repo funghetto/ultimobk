@@ -1,0 +1,20 @@
+app-emulation/wine mono abi_x86_32 abi_x86_64 custom-cflags dos gsm gstreamer openal opencl -realtime s3tc staging vaapi LINGUAS: en en_US it ru de uk
+# required by dev-qt/qtwebengine-5.7.1-r1::gentoo
+# required by www-client/qupzilla-2.1.2::gentoo
+# required by qupzilla (argument)
+>=dev-qt/qtwebchannel-5.7.1 qml
+# required by www-client/qupzilla-2.1.2::gentoo
+# required by qupzilla (argument)
+>=dev-qt/qtwebengine-5.7.1-r1 widgets
+# required by games-util/steam-client-meta-0-r20160828::steam-overlay[-steamruntime]
+# required by steam-client-meta (argument)
+>=x11-libs/gtk+-2.24.31-r1:2 cups
+# required by games-util/steam-games-meta-0-r20160812::steam-overlay[steamgames_witcher2]
+# required by games-util/steam-meta-0-r20160817::steam-overlay
+# required by @selected
+# required by @world (argument)
+>=media-libs/libsdl2-2.0.4 haptic
+# required by net-libs/nodejs-6.9.4::gentoo
+# required by www-client/chromium-59.0.3071.47::gentoo
+# required by chromium (argument)
+>=dev-libs/openssl-1.0.2k -bindist

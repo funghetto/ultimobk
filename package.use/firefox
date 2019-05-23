@@ -1,0 +1,1 @@
+www-client/firefox -startup-notification -bindist -hwaccel custom-cflags custom-optimization system-cairo system-harfbuzz system-icu system-jpeg system-libevent system-libvpx system-sqlite gmp-autoupdate nsplugin -pgo

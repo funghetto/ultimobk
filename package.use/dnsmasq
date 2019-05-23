@@ -1,0 +1,1 @@
+net-dns/dnsmasq dbus dhcp id inotify ipv6 nls auth-dns -conntrack dhcp-tools -dnssec -idn -lua -script -static -tftp

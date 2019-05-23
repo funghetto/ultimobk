@@ -1,0 +1,2 @@
+lxqt-base/lxqt-meta lximage -policykit
+lxqt-base/lxqt-panel colorpicker -desktopswitch networkmonitor sensors statusnotifier sysstat cpuload
